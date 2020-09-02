@@ -1,6 +1,8 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -30,6 +32,7 @@ module.exports = {
   devServer: {
     port: 9999,
     hot: true,
+    stats: 'errors-only',
     clientLogLevel: 'warning'
   },
   module: {
@@ -61,6 +64,8 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new FriendlyErrorsWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
