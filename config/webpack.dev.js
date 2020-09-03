@@ -6,6 +6,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 module.exports = {
   mode: 'development',
+  devtool: 'cheap-module-eval-source-map',
   entry: {
     app: './src/index.tsx'
   },
@@ -59,6 +60,12 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: "awesome-typescript-loader"
+      },
+      {
+        test: /\.tsx?$/,
+        enforce: 'pre',
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
       }
     ]
   },
