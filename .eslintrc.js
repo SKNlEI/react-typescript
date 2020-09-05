@@ -23,6 +23,7 @@ module.exports = {
     node: true,
   },
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off'
-  }
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+  },
 }
