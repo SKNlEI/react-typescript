@@ -3,11 +3,15 @@ module.exports =  {
   "semi": false,
   "singleQuote": true,
   "trailingComma": "all",
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "arrowParens": "avoid",
-  "insertPragma": true,
+  "insertPragma": false,
   "tabWidth": 2,
   "useTabs": false ,
-  "endOfLine": "crlf"
+  "endOfLine": "crlf",
+  "semicolons": false,
+  "quoteProps": false,
+  "jsxQuotes": true,
+  "jsxBrackets": true
 }

@@ -45,6 +45,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@better-scroll/core": "^2.0.2",
+    "@better-scroll/pull-up": "^2.0.2",
     "antd": "^4.6.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -60,7 +62,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts, tsx}": [
-      "tslint -c ./.eslintrc"
+      "tslint -c ./.eslintrc.js"
     ]
   }
 }
