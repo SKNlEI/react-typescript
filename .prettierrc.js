@@ -11,7 +11,7 @@ module.exports =  {
   "useTabs": false ,
   "endOfLine": "crlf",
   "semicolons": false,
-  "quoteProps": false,
+  "quoteProps": 'as-needed',
   "jsxQuotes": true,
   "jsxBrackets": true
 }
