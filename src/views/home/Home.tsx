@@ -42,9 +42,9 @@ function Home(): JSX.Element {
               ))}
             </ul>
             <div className="pullup-tips">
-              {/* <div className="before-trigger">
+              <div className="before-trigger">
                 <span className="pullup-txt">Pull up and load more</span>
-              </div> */}
+              </div>
               <div className="after-trigger">
                 <span className="pullup-txt">Loading...</span>
               </div>
